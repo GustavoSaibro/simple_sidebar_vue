@@ -30,11 +30,11 @@ export default {
     const store = useStore()
     const route = useRoute()
 
-    const active = computed(() => route.path === props.to)
+    const isActive = computed(() => route.path === props.to)
     const collapsed = computed(() => store.getters.isCollapsed)
 
     return {
-      active,
+      isActive,
       collapsed
     }
   }

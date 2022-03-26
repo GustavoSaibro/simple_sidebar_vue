@@ -1,10 +1,10 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import store from './store/store'
-import routes from './router/routes'
+import router from './router/routes'
 import '@fortawesome/fontawesome-free/js/all'
 
 createApp(App)
     .use(store)
-    .use(routes)
+    .use(router)
     .mount('#app')
